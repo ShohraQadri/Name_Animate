@@ -1,0 +1,47 @@
+div {
+  width: 60px;
+  height: 80px;
+  font-size: 85px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  top: 10px;
+}
+#top {
+  width: 60px;
+  height: 80px;
+  background: linear-gradient(red, blue);
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+  animation: text 6s infinite;
+}
+@keyframes text {
+  0% {
+    position: absolute;
+    top: 0px;
+  }
+  100% {
+    position: absolute;
+    top: 800px;
+  }
+}
+
+@media only screen and (max-width: 546px) {
+  div {
+    left: 163px;
+  }
+  #top {
+    left: 173px;
+  }
+}
+@media only screen and (min-width: 547px) and (max-width: 768px) {
+  div {
+    left: 349px;
+  }
+  #top {
+    left: 360px;
+  }
+}
